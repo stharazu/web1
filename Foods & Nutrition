@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--updated on 21th July.(Kelsi)-->
+<!--reference 1:https://www.zooplus.co.uk/shop/dogs-->
+<!--reference 2:http://pet.unicharm.co.jp/brand/aiken.html-->
+<html>
+<head>
+  <title>Foods & Nutrition &hearts; Puppy Love</title>
+  <link href="setting.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <body bgcolor="#ffcccc">
+  <br/>
+
+  <style>
+  .topnav {
+background-color: #ffcccc;
+overflow: hidden;
+position: fixed;
+top:0;
+width:100%}
+
+  .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-size: 22px;}
+
+  .topnav a:hover {
+  background-color: #c5cfe6;
+  color: black;}
+
+  .topnav a.active {
+  background-color: #ffcccc;
+  color: gray;}
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+    .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+    .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  img:hover {
+    animation: shake 0.5s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+  </style>
+
+  <script>
+
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Breeds.html">Breeds</a>
+        <a href="Sell Adoption">Sell & Adoption</a>
+        <a class="active" href="Shop.html">Shop</a>
+        <a href="Vaccinations.html">Vaccinations</a>
+        <a href="Special Service.html">Special Service</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+<hr style="border: 2px solid gray;">
+
+<br/>
+<h1>Foods & Nutrition</h1><div class="popup" onclick="myFunction()"><h2><u>Tip!</u></h2>
+  <span class="popuptext" id="myPopup">Moistern food is better for puppies</span>
+</div>
+<br/>
+
+<table>
+  <tr>
+    <table border="1" bgcolor="#ddd" width="400" cellpadding="20" cellspacing="1" align="center">
+    <th>Dry Dog Food</th>
+    <th>Wet Dog Food</th>
+  </tr>
+  <tr>
+    <th><a href="Dry Dog Food.html"><img src="dry food edited.jpg" alt="Dry Dog Food" width=600></a></th>
+    <th><a href="Wet Dog Food.html"><img src="soft food edited.jpg"alt="Wet Dog Food" width=600></a></th>
+  </tr>
+</table>
+<br/>
+  <center><font size="-1">&copy; 2019 by Puppy Love</font></center>
+
+</body>
+
+</html>
