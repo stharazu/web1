@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* CSS Document */
+/*This Css is applied for whole body*/
+body{
+			margin:0px;
+			padding:0px;
+		}
+/*Bannerdiv is the ID for our website banner*/
+		#bannerdiv{
+		 background-image:linear-gradient(lightpink,white);
+		 background-image:url('../images/banner.jpg');/*image source:https://pngtree.com/freebackground/pet-shop-promotion-cartoon-geometry-blue-banner_899736.html*/
+		 background-position:left;
+		 height:200px;
+		 width:100%;
+		}
+/*This Css is used to fromat h1 located inside the bannerdiv*/
+		#bannerdiv h1{
+			color:maroon;
+			font-size:35px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			text-align:center;
+		}
+		#bodydiv{
+		//background-image:linear-gradient(white,lightpink);
+		height:1200px;
+		width:100%;
+
+	}
+
+	#checkdiv{
+		height:80px;
+		width:100%;
+		margin:0px;
+		padding:0px;
+
+	}
+
+	#gifdiv{
+		width:20%;
+		float:left;
+		height:auto;
+
+
+	}
+/*This menudiv ID is to format our menus*/
+		#menudiv{
+			margin-right:0px;
+			padding-right:0px;
+			width:80%;
+			float:right;
+			//background-attachment:fixed;
+		}
+/*This class is for the menubar tabs*/
+		.menu{
+			display:inline-block;
+			height:30px;
+			width:10%;
+			background-color:darkcyan;
+			color:white;
+			text-align:center;
+			padding-top:10px;
+			border:1px solid white;
+			border-top-right-radius:20px 20px;
+			border-bottom-left-radius:20px 20px;
+
+		}
+/*This is the class for our dropdown menu*/
+		.submenu{
+			display:none;
+			position:absolute;
+			z-index:1;
+			height:auto;
+			width:170px;
+			list-style-type:none;
+
+		}
+		.submenuli{
+			background-color:#53B9B7;
+		}
+		.menu:hover .submenu{
+			display:block;
+			margin:0px;
+			padding:0px;
+
+		}
+		.menu:hover .submenu .submenuli{
+			display:block;
+			position:relative;
+			height:30px;
+			width:100%;
+			margin-top:3px;
+			padding-top:10px;
+			border:1px solid white;
+			border-top-right-radius:20px 20px;
+			border-bottom-left-radius:20px 20px;
+
+		}
+		.submenuli:hover{
+			background-color:darkcyan;
+			width:100%;
+			color:yellow;
+			//text-decoration:underline;
+		}
+
+		.menuclass a:link{
+			color:white;
+			text-decoration:none;
+		}
+		.menuclass a:hover{
+			color:yellow;
+			text-decoration:underline;
+		}
+		.menuclass a:visited{
+			color:white;
+			text-decoration:none;
+		}
+		.menuclass a:active{
+			color:red;
+			text-decoration:none;
+		}
+
+	#body_upperdiv{
+		height:auto;
+		width:100%;
+		background-image:linear-gradient(pink,white);
+	}
+#body_upperdiv p{
+	text-align:justify;
+	font-size: 18px;
+	padding: 0px 10px;
+color:maroon;
+}
+
+#body_upperdiv table{
+	width:90%;
+	margin:auto;
+	border:1px solid brown;
+	background-image:linear-gradient(skyblue,white);
+}
+#body_upperdiv td, #body_lowerdiv td{
+	height:50px;
+	text-align:center;
+
+}
+#body_upperdiv th, #body_lowerdiv th{
+	height:60px;
+	font-size:20px;
+	text-decoration:underline;
+	background-color:darkcyan;
+}
+
+	/* from here css for image slider begins
+	image slider css code copied from : https://codepen.io/dudleystorey/pen/ehKpi
+
+
+	*/
+		@keyframes slidy {
+				0% { left: 0%; }
+				20% { left: 0%; }
+				25% { left: -100%; }
+				45% { left: -100%; }
+				50% { left: -200%; }
+				70% { left: -200%; }
+				75% { left: -300%; }
+				95% { left: -300%; }
+				100% { left: -400%; }
+				}
+				div#slider { overflow: hidden; width:100%;}
+				div#slider figure img { width: 20%; height:100%; float: left; }
+				div#slider figure {
+				  position: relative;
+				  width: 500%;
+				  height:500px;
+				  margin: 0;
+				  left: 0;
+				  text-align: left;
+				  font-size: 0;
+				  animation: 20s slidy infinite;
+				}
+		#body_middlediv{
+			height:auto;
+			width:100%;
+			background-color:white;
+				margin-bottom:10px;
+		}
+		#body_middlediv h1{
+				color:maroon;
+				text-align:center;
+				font-family:"Times New Roman", Times, serif;
+				font-size:36px;
+				padding-top:5px;
+		}
+		#body_middlediv p{
+			text-align:center;
+
+
+		}
+		#body_lowerdiv{
+			height:600px;
+			background-image:linear-gradient(white,lightpink);
+			width:100%;
+			margin:auto;
+		}
+		#body_lowerdiv table{
+			width:90%;
+			margin:auto;
+			border:1px solid brown;
+			background-image:linear-gradient(white,skyblue);
+		}
+
+		#body_lower2div{
+			height:420px;
+			background-image:linear-gradient(white,skyblue);
+			width:100%;
+			margin:auto;
+		}
+		#body_lower_outerdiv{
+
+			height:400px;
+			text-align:center;
+			width:80%;
+			margin:auto;
+			padding-top:20px;
+			//background-color:yellow;
+		}
+		#body_lower_outerdiv img{
+
+				height:130px;
+				width:150px;
+				border:10px solid darkcyan;
+				border-radius:50%;
+
+		}
+		#body_lower_outerdiv img:hover{
+			transform:scale(1.1);
+		}
+		#body_lower_outerdiv p{
+			text-align:justify;
+			color:#3A3A3A;
+			background-color:lightyellow;
+			border:5px groove pink;
+			font-family:"Times New Roman", Times, serif;
+			padding:5px;
+		}
+		#body_lower_leftdiv{
+		padding:10px;
+		background-color:#A6E6E2;
+			height:350px;
+			width:30%;
+			float:left;
+			margin-right:25px;
+
+		}
+		#body_lower_centerdiv{
+		padding:10px;
+		background-color:#77DCE1;
+			height:350px;
+			width:30%;
+			float:left;
+		}
+		#body_lower_rightdiv{
+		padding:10px;
+		background-color:#60CED7;
+			height:350px;
+			width:30%;
+			float:right;
+		}
+
+		#footerdiv{
+			//color:maroon;
+			font-family:"Times New Roman", Times, serif;
+			text-align:center;
+		}
+
+		#footerdiv p a:link{
+			color:maroon;
+			text-decoration:none;
+		}
+		#footerdiv p a:hover{
+			color:yellow;
+			text-decoration:none;
+		}#footerdiv p a:visited{
+			color:maroon;
+			text-decoration:none;
+		}#footerdiv p a:active{
+			color:red;
+			text-decoration:underline;
+		}
+
+
+		#referencesdiv{
+			background-color:pink;
+			font-size:10px;
+		}
+
+
+#maindiv{
+  border: 1px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#div1 {
+  display: inline-block;
+  animation: marquee 13s linear infinite;
+}
+
+#div2 {
+  display: inline-block;
+  animation: marquee2 10s linear infinite;
+  animation-delay: 7s;
+}
+
+#formdiv{
+		width:70%;
+		height:auto;
+		margin:auto;
+		padding-top:10px;
+		//background-image:linear-gradient(skyblue,white);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}  /* from here css for text slider begins
+	text slider css code copied from : https://codepen.io/Jaskaranbir/pen/JKNgrb
